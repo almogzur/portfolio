@@ -1,17 +1,18 @@
-import React from "react";
-import nav1 from '../Components/nav1/page'
-
+import Nav1 from "../Components/Nav1"
 
 export default function Page() {
 
     return (
-    <div 
-    id="main"
-    className="d-flex 	"
-    >
-    <nav1/>
-    
-    </div>
+      <>
+   <Nav1/> 
+   <header>
+    this is the header
+   </header>
+
+   <main>
+
+   </main>
+   </>
     )
 
-  }
+  }  
