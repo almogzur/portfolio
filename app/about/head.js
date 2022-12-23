@@ -1,13 +1,13 @@
 
- export default function AboutHead () {
+ export default function Head () {
 
     return (
       <>
-       <title>about</title>
+       <title>About</title>
        <meta name="viewport" content="width=device-width, initial-scale=1"  /> 
        <meta  
        name="description"
-       content=" about Next js 13 ."></meta>
+       content=" About Page ."></meta>
        </>
        
    );

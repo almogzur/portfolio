@@ -1,18 +1,15 @@
-import Nav1 from "../Components/Nav1"
+//client componenet 
+'use client'
+
+import  {motion} from 'framer-motion'
 
 export default function Page() {
 
+
     return (
-      <>
-   <Nav1/> 
-   <header>
-    this is the header
-   </header>
+   <motion.div >
 
-   <main>
-
-   </main>
-   </>
+   </motion.div>
     )
 
-  }  
+  }      
