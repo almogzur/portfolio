@@ -2,17 +2,20 @@
 import React from "react";
 import Link from 'next/link';
 import '../styles/global.css'
-import pathsHndler from "../pathsHndler";
+import appNavRouts from "../appNavRouts";
+
+function capitalizeFirstLetter(string) {
+   return string.charAt(0).toUpperCase() + string.slice(1);
+ }
 
 export default async function Nav1 ( {/*porps*/ } ){
     
-  let linksArr = await pathsHndler()
+  let routsArr = await appNavRouts()
 
- 
     return (
-        <nav id="nav1" >
-                {linksArr.map((link)=>{
-                   return   <Link key={ link } href = { link === "home" ? "/" : link } >{ link }</Link>
+        <nav id="navbar1" >
+                {routsArr.map((rout)=>{
+                   return   <Link key={ rout } href = { rout === "Home" ? "/" : rout } > { capitalizeFirstLetter(rout)} </Link>
                 })}
        </nav>
     )
