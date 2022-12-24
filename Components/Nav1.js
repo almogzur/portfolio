@@ -16,10 +16,15 @@ export default async function Nav1 ( {/*porps*/ } ){
     return (
         <nav id="navbar1" >
          
-        <Image className="nav1icon" src="/React.png"width={50}height={50} alt=""/> 
-          {
-            routsArr.map((rout)=>{
-                   return  <Link className="link" key={ rout } href = { rout === "Home" ? "/" : rout } > { capitalizeFirstLetter(rout)} </Link>
+        <Image className="nav1icon" src="/react.png"width={70}height={70} alt=""/> 
+
+          {routsArr.map((rout)=>{
+                    return   <Link 
+                    className="link" 
+                    key={ rout } 
+                    href = { rout === "Home" ? "/" : rout } 
+                    >{ capitalizeFirstLetter(rout)}
+                     </Link>
                 })
           }
        </nav>
