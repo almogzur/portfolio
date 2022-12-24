@@ -2,7 +2,7 @@ import fs from 'fs/promises'
 
 export  default async  function appNavRouts (){
 
-const files = await  fs.readdir('./app'); 
+const files = await fs.readdir('./app'); 
 
 let navArray = []
 
