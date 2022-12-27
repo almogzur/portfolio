@@ -7,7 +7,7 @@ export default function HomeSection (){
     return <motion.div className="home"  
     initial={{ scale: 0 }}
     animate={{  scale: 0.9  }}
-    whileHover={{ scale: 1.01 }}
+    whileHover={{ scale: 0.99 }}
     transition={{
      type: "spring",
      stiffness: 260,
@@ -15,8 +15,7 @@ export default function HomeSection (){
    }}
     >
     <div  className='textblock'> Orange </div>
-    
-        <Image  
+    <Image  
           className="scover" 
         src={sectionBG} 
         width={1200}

@@ -1,5 +1,5 @@
 import Nav1 from "../Components/Nav1"
-import Nav2 from '../Components/Nav2'
+import FooterNav from '../Components/FooterNav'
 export default function RootLayout({ children }) {
 
   return (
@@ -8,7 +8,9 @@ export default function RootLayout({ children }) {
       <body>
       <Nav1/>
       {children}
+      <FooterNav/>
       </body>
+   
     </html>
   )
 }
