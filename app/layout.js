@@ -7,10 +7,11 @@ export default function RootLayout({ children }) {
       <head/>
       <body>
       <Nav1/>
+      <main>
       {children}
+      </main>
       <FooterNav/>
       </body>
-   
     </html>
   )
 }

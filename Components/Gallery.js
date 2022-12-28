@@ -53,27 +53,33 @@ useEffect(()=>{
 
 return (
 <>
-   <AnimatePresence initial={false} custom={direction} >
+   <AnimatePresence initial={"enter"} custom={direction} >
      <div className='gallery-text-wrapper'>
         <div className='gallerymotion'>
-       <motion.img 
-          key={currentPhoto}
-          src={photosArry[currentPhoto].src}
-          style={{  borderRadius:"0px"  }}
+        
+          <motion.img 
+             key={currentPhoto}
+             src={photosArry[currentPhoto].src}
+             style={{  borderRadius:"0px" , width:"30vw"}}
              custom={direction}
              variants={variants}
              initial="enter"
              animate="center"
              exit="exit"
              transition={{
-            x: { type: "spring", stiffness: 300, damping: 110 },
-            opacity: { duration: 1 }
-          }}
-        /> 
+                  x: { type: "spring", stiffness: 300, damping: 110 },
+                  opacity: { duration: 1 },
+                  zIndex:0
+               }}
+          /> 
         </div>
-        
+        <button className = "btnleft" onClick = { upClick } ><CircumIcon name="square_chev_left" /> </button>
+        <button className = "btnright"onClick={downClick} ><CircumIcon name="square_chev_right"/> </button>
+
         <div className='text-gallery'>
            <motion.div 
+              initial={{ scale: 0 }}
+              animate={{scale:1}}
               whileHover={{ scale: 1.05 }}
               transition={{
                          type: "spring",
@@ -90,12 +96,11 @@ return (
           </p>
         </div>
      </div>
-     <button className = "btn up" onClick = { upClick } > <CircumIcon name="square_chev_right"/> </button>
-     <button className = "btn down"onClick={downClick} ><CircumIcon name="square_chev_left"/></button>
-   </AnimatePresence>
-
+        
    
-
+       
+    
+   </AnimatePresence>
 </>
 
 )

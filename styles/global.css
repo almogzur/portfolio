@@ -1,7 +1,9 @@
-
-body, html {
-    margin: 0;
-    padding: 0;
+body{
+ background:#353538;
+}
+main {
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     height: 100%;
     background:#353538;
@@ -13,6 +15,7 @@ body, html {
      justify-content: flex-end; 
      box-shadow: 2px 3px 10px #f2853c;
      margin-bottom:1%;
+     background:#353538;
 
 }
 .link {
@@ -57,40 +60,39 @@ body, html {
 .gallery-text-wrapper{
     margin-top:3%;
     display:flex;
-    flex-decoration:column;
-    justify-content:center;
     height:400px;
+    width:100%;
+    margin-bottom:3%;
 }
 .gallerymotion{
     display:flex;
     justify-content:center;
-    border-radius:30px;
     width:45vw;
     margin:20px;
 }
-.up, .down {
-    position:relative;
+.btnleft, .btnright {
+    position:absolute;
     background: #e9853a;
     border-radius: 10px;
     border:none;
     width: 30px;
     height: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     user-select: none;
     cursor: pointer;
-    font-size: 12px;
-    z-index: 2;
+    z-index:2;
   }
 
-.up {
-    left:45%;
-    top:-16%;
-  }
-.down { 
-    top:-20%;
-    right:-1%;
+.btnleft {
+  left:2%;
+  margin-top:10%;
+}
+.btnright { 
+  left:44%;
+  margin-top:10%;
+ 
 }
 .text-gallery{
     border: solid 5px #f2853c;
@@ -103,28 +105,29 @@ body, html {
     
 }
 p{
+    margin-top:-10px;
     padding:5px;
-    font-size:25px;
+    font-size:22px;
     text-indent: 10%;
 }
 p::first-letter {
     font-size: 200%;
     color: #f2853c;
-  }
-
-
-
-  footer{
-   height:5%;
-   width: 100%;
-   background:orange;
-   color: white;
-   text-align: center;
-   z-index:4;
-   
- 
-    
 }
+
+footer{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   height:100px;
+   width:100%;
+   box-shadow: 1px 1px 15px 1px #f2853c;
+   color: white;
+   background:#353538;
+ 
+}
+
+
 
 
 
