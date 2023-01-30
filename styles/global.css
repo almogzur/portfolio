@@ -1,12 +1,12 @@
 body{
- background:#353538;
+ background:#d2d4d8;
 }
 main {
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: 100%;
-    background:#353538;
+    background:#d2d4d8;
 }
 /**********Nav***** */
 #navbar1{
@@ -15,7 +15,7 @@ main {
      justify-content: flex-end; 
      box-shadow: 2px 3px 10px #f2853c;
      margin-bottom:1%;
-     background:#353538;
+     background:#d2d4d8;
 
 }
 .link {
@@ -98,7 +98,7 @@ main {
     border: solid 5px #f2853c;
     width:45vw;
     border-radius:30px;
-    color:#d6d8db;
+   
     text-align: justify;
     padding:20px;
     z-index:2;
@@ -123,7 +123,7 @@ footer{
    width:100%;
    box-shadow: 1px 1px 15px 1px #f2853c;
    color: white;
-   background:#353538;
+   background:#d2d4d8;
  
 }
 

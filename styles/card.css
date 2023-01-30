@@ -1,5 +1,16 @@
-.cards{
-    width:100%;
-    height:30%;
-    background:red;
+.cards-wrapper{
+    display:flex;
+    justify-content:space-between;
+    width:99%;
+    height:400px;
+    background:#d2d4d8;
+    z-index:6;
+    border: solid 5px #f2853c;
+    margin-bottom:3%;
+    
+
+}
+
+.card{
+
 }
