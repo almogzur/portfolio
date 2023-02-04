@@ -14,7 +14,7 @@ export default function HomeSection (){
      damping: 100,
    }}
     >
-    <div  className='textblock'> Orange </div>
+    <div  className='textblock'>  </div>
     <Image  
           className="scover" 
         src={sectionBG} 
