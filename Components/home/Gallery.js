@@ -1,8 +1,8 @@
 'use client'
 import  {motion, AnimatePresence} from 'framer-motion'
-import P1 from '../public/gallery/1.png'
-import P2 from '../public/gallery/2.jpg'
-import P3 from '../public/gallery/3.jpg'
+import P1 from '../../public/gallery/1.png'
+import P2 from '../../public/gallery/2.jpg'
+import P3 from '../../public/gallery/3.jpg'
 import { useEffect, useState } from 'react'
 import CircumIcon from "@klarr-agency/circum-icons-react"
 const photosArry = [ P1 , P2 , P3 ];

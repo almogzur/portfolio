@@ -1,16 +1,16 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
-import sectionBG from '../public/sitecover.jpg'
+import sectionBG from '../../public/sitecover.jpg'
 
 export default function HomeSection (){
 
     return <motion.div className="home"  
-    initial={{ scale: 0 }}
-    animate={{  scale: 0.9  }}
-    whileHover={{ scale: 0.99 }}
+    initial={{ scale: 0.5 }}
+    animate={{  scale: 0.8  }}
+    whileHover={{ scale: 0.9 }}
     transition={{
      type: "spring",
-     stiffness: 260,
+     stiffness: 200,
      damping: 100,
    }}
     >
@@ -19,7 +19,7 @@ export default function HomeSection (){
           className="scover" 
         src={sectionBG} 
         width={1200}
-        height={500}
+        height={400}
          alt=""
           />
  
