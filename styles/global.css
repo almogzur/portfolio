@@ -23,12 +23,9 @@ main {
     border-radius:10px;
     margin:15px;
     text-align: center;
-    color:#f2853c;
+    color:#6896c8;
     text-decoration: none;
 }
-
-  
-
 
 /*****Section ***** */
 .home{
@@ -44,7 +41,7 @@ main {
      z-index:2
 }  
 /***** Gallery *****/
-.gallery-text-wrapper{
+.gallery-wrapper{
     margin-top:3%;
     display:flex;
     height:400px;
@@ -59,7 +56,7 @@ main {
 }
 .btnleft, .btnright {
     position:absolute;
-    background: #e9853a;
+    background: #6896c8;
     border-radius: 10px;
     border:none;
     width: 30px;
@@ -81,14 +78,9 @@ main {
   margin-top:10%;
  
 }
-.text-gallery{
-    border: solid 5px #f2853c;
-    width:45vw;
-    border-radius:30px;
-   
-    text-align: justify;
-    padding:20px;
-    z-index:2;
+/****** end *****///
+
+.welcome{
     
 }
 p{
