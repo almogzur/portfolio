@@ -10,7 +10,9 @@ export default function FooterNav (){
  return(
 
  <footer>
- footer
+ <a href=''><CircumIcon name="twitter" color="#6896c8"/></a>
+ <a href=''><CircumIcon name="facebook" color="#6896c8"/></a>
+ <a href=''><CircumIcon name="instagram" color="#6896c8"/></a>
  </footer>
  )
 }

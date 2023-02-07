@@ -1,5 +1,13 @@
+:root{
+    --blue:#6896c8;
+}
+.text-center{
+    text-align:center;
+    text-indent: 1%;
+}
 body{
  background:#fff;
+ width:100vw;
 }
 main {
     margin: 0px;
@@ -26,33 +34,35 @@ main {
     color:#6896c8;
     text-decoration: none;
 }
-
 /*****Section ***** */
 .home{
-    font-family:fantasy;
-    letter-spacing: .3rem;
-    color:#fff;
     display:flex;
     justify-content:center;
-    z-index:2
+    z-index:2;
 }
 .scover{
-     border-radius:40px;
-     z-index:2
+    
+     width:100%;
+     z-index:0;
 }  
+/***** Welcome Text **/ 
+.welcome{ 
+    width:100vw;
+    text-align:justify;
+}
 /***** Gallery *****/
 .gallery-wrapper{
     margin-top:3%;
     display:flex;
     height:400px;
-    width:100%;
+    width:100vw;
     margin-bottom:3%;
 }
 .gallerymotion{
     display:flex;
     justify-content:center;
-    width:45vw;
     margin:20px;
+    width:100vw;
 }
 .btnleft, .btnright {
     position:absolute;
@@ -70,44 +80,60 @@ main {
   }
 
 .btnleft {
-  left:2%;
+  left:27%;
   margin-top:10%;
 }
 .btnright { 
-  left:44%;
+  left:74%;
   margin-top:10%;
  
 }
-/****** end *****///
-
+/****** Welcome text *****///
 .welcome{
-    
+    display:flex;
+    width:100vw;
+    height:20px;
+    background:blue;
 }
 p{
-    margin-top:-10px;
+    margin-top:10px;
+    margin-bottom:20px;
     padding:5px;
     font-size:22px;
-    text-indent: 10%;
+  
+
 }
 p::first-letter {
     font-size: 200%;
-    color: #f2853c;
+    color: var(--blue)
+}
+input{
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+}
+label{
+    padding:15px;
+}
+#serch{
+    margin-top:20px;
+    border-radius:10px;
+    width:10%;
+    height:50px;
+    background:var(--blue);
+    border:none;
 }
 
 footer{
    display:flex;
-   justify-content:space-between;
-   align-items:center;
-   height:100px;
-   width:100%;
-   box-shadow: 1px 1px 15px 1px #f2853c;
+   justify-content:center;
+   width:99vw;
+   height:50px;
+   box-shadow: 1px 0px 5px  var(--blue);
    color: white;
-   background:#d2d4d8;
+   
  
 }
-
-
-
 
 
 @media (min-width: 768px ) and (max-width: 959px) {
