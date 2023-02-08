@@ -9,13 +9,7 @@ body{
  background:#fff;
  width:100vw;
 }
-main {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-    background:#fff;
-}
+
 /**********Nav***** */
 #navbar1{
      font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -46,23 +40,31 @@ main {
      z-index:0;
 }  
 /***** Welcome Text **/ 
-.welcome{ 
-    width:100vw;
-    text-align:justify;
+.welcome{
+    display:flex;
+    justify-content:center;
+    width:99vw;
+    align-content:center;
+
+}
+p{
+    margin-top:10px;
+    margin-bottom:20px;
+    padding:5px;
+    font-size:22px;
+  
+
+}
+p::first-letter {
+    font-size: 200%;
+    color: var(--blue)
 }
 /***** Gallery *****/
-.gallery-wrapper{
-    margin-top:3%;
-    display:flex;
-    height:400px;
-    width:100vw;
-    margin-bottom:3%;
-}
 .gallerymotion{
     display:flex;
     justify-content:center;
     margin:20px;
-    width:100vw;
+    width:50vw;
 }
 .btnleft, .btnright {
     position:absolute;
@@ -80,32 +82,17 @@ main {
   }
 
 .btnleft {
-  left:27%;
+  left:7%;
   margin-top:10%;
 }
 .btnright { 
-  left:74%;
+  left:47%;
   margin-top:10%;
  
 }
-/****** Welcome text *****///
-.welcome{
-    display:flex;
-    width:100vw;
-    height:20px;
-    background:blue;
-}
-p{
-    margin-top:10px;
-    margin-bottom:20px;
-    padding:5px;
-    font-size:22px;
-  
-
-}
-p::first-letter {
-    font-size: 200%;
-    color: var(--blue)
+/****Dates*******/
+.dates{
+    width:50vw;
 }
 input{
     padding:20px;
