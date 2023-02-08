@@ -35,7 +35,6 @@ body{
     z-index:2;
 }
 .scover{
-    
      width:100%;
      z-index:0;
 }  
@@ -52,8 +51,6 @@ p{
     margin-bottom:20px;
     padding:5px;
     font-size:22px;
-  
-
 }
 p::first-letter {
     font-size: 200%;
@@ -110,6 +107,8 @@ label{
     background:var(--blue);
     border:none;
 }
+
+//*** Wrapper **///
 
 footer{
    display:flex;

@@ -56,9 +56,8 @@ useEffect(()=>{
 return (
 <>
    <AnimatePresence initial={"enter"} custom={direction} >
-     <div className='gallery-wrapper'>
-
         <div className='gallerymotion'>
+
         <button className = "btnleft" onClick = { upClick } ><CircumIcon name="square_chev_left" /> </button>
         <button className = "btnright"onClick={downClick} ><CircumIcon name="square_chev_right"/> </button>
         
@@ -77,7 +76,7 @@ return (
                   zIndex:0
                }}
           /> 
-        </div>
+       
      </div>
    </AnimatePresence>
 </>
