@@ -9,7 +9,6 @@ body{
  background:#fff;
  width:100vw;
 }
-
 /**********Nav***** */
 #navbar1{
      font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -56,12 +55,19 @@ p::first-letter {
     font-size: 200%;
     color: var(--blue)
 }
+/******* Wrapper Gallery and Dates *****/
+#wrapper{
+    display:flex;
+    justify-content:space-around;
+    height:50%;
+}
 /***** Gallery *****/
 .gallerymotion{
     display:flex;
     justify-content:center;
-    margin:20px;
-    width:50vw;
+    
+    background:lightpink;
+
 }
 .btnleft, .btnright {
     position:absolute;
@@ -79,25 +85,38 @@ p::first-letter {
   }
 
 .btnleft {
-  left:7%;
+  left:57%;
   margin-top:10%;
 }
 .btnright { 
-  left:47%;
+  left:92%;
   margin-top:10%;
  
 }
+/********end Gallery *******/
 /****Dates*******/
 .dates{
-    width:50vw;
-}
-input{
-    padding:20px;
-    border-radius:10px;
-    width:250px;
+    width:50%;
+    justify-content:center;
 }
 label{
-    padding:15px;
+    margin:10px;
+}
+#from,#to{
+    width:100%;
+    height:30px;
+    border:none;
+    margin-top:5%;
+}
+#depart,#return{
+    margin-top:40px;
+    width:100%;
+    height:30px;
+    border:none;
+}
+#adults,#childrens,#flightclass{
+ margin-top:50px;
+ width:25%;
 }
 #serch{
     margin-top:20px;
@@ -107,9 +126,7 @@ label{
     background:var(--blue);
     border:none;
 }
-
-//*** Wrapper **///
-
+/****end dates*******/
 footer{
    display:flex;
    justify-content:center;
