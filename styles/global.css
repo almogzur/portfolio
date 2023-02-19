@@ -169,7 +169,7 @@ footer{
     body{background:lightblue;}  
 }
 @media (min-width: 480px ) and (max-width: 767px) {
-    body{background:lightpink}
+    body{background:#00d543}
 }
 ////*mobole*///////
 @media (min-width: 100px ) and (max-width: 480px) {
