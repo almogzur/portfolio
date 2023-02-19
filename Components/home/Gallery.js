@@ -58,8 +58,8 @@ return (
    <AnimatePresence initial={"enter"} custom={direction} >
         <div className='gallerymotion'>
 
-        <button className = "btnleft" onClick = { upClick } ><CircumIcon name="square_chev_left" /> </button>
-        <button className = "btnright"onClick={downClick} ><CircumIcon name="square_chev_right"/> </button>
+        <button className = "btnleft" onClick = { upClick } ><CircumIcon name="paperplane" size={90} /> </button>
+        <button className = "btnright"onClick={downClick} ><CircumIcon name="paperplane" size={90} /> </button>
         
           <motion.img 
              key={currentPhoto}

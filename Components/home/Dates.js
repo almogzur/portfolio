@@ -8,23 +8,21 @@ const conhtmllist = conlist.map((contry,index)=>{
 
 export default function Dates (){
 
-    return(
+    return( 
       <div id="wrapper">
     <div className=" dates text-center">
-      <label htmlFor="from">From</label>
       <select id='from'>
+      <option value="" disabled selected hidden>Select Destination</option>
         {conhtmllist}
         </select>
-     <label htmlFor="to">To</label>
         <select id="to">
+        <option value="" disabled selected hidden>Select Return</option>
         {conhtmllist}
         </select>
         <br/>
-      <label htmlFor="depart">Depart</label>
          <input type="date" id="depart" name="depart" readOnly
                 value="2018-07-22"
                 min="2023-01-01" max="2024-12-31"/> <rb/>
-      <label htmlFor="return">Return</label>
          <input type="date" id="return" name="return" readOnly
                 value="2018-07-22"
                 min="2018-01-01" max="2018-12-31" /> 

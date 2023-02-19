@@ -1,5 +1,6 @@
 :root{
     --blue:#6896c8;
+    --inputHiegh:100px
 }
 .text-center{
     text-align:center;
@@ -65,32 +66,32 @@ p::first-letter {
 .gallerymotion{
     display:flex;
     justify-content:center;
-    
-    background:lightpink;
+
 
 }
 .btnleft, .btnright {
     position:absolute;
-    background: #6896c8;
-    border-radius: 10px;
+    
+    display:flex;
     border:none;
-    width: 30px;
-    height: 30px;
-    display: flex;
+    color:#fff;
     justify-content: space-between;
     align-items: center;
     user-select: none;
     cursor: pointer;
     z-index:2;
+    background:transparent;
   }
 
 .btnleft {
-  left:57%;
-  margin-top:10%;
+  left:65%;
+  margin-top:20%;
+  transform: rotate(180deg);
+  
 }
 .btnright { 
-  left:92%;
-  margin-top:10%;
+  left:91%;
+  margin-top:20%;
  
 }
 /********end Gallery *******/
@@ -98,25 +99,52 @@ p::first-letter {
 .dates{
     width:50%;
     justify-content:center;
-}
-label{
-    margin:10px;
+    padding:0px;
+    margin:0px;
 }
 #from,#to{
     width:100%;
     height:30px;
-    border:none;
     margin-top:5%;
+    height:var(--inputHiegh);
+    outline-style: solid ;
+    outline-offset:3px;
+    border: solid 3px #1e31ff;
+    outline-radius:15px;
+    border-radius:15px;
+    
+}
+#from:focus{
+   border-color:red;
+}
+#to:focus{
+}
+#from:checked{
+   border-color:#1e31ff;
+}
+#to:checked{
+
 }
 #depart,#return{
     margin-top:40px;
     width:100%;
-    height:30px;
-    border:none;
+    height:var(--inputHiegh);
+    outline-style: solid ;
+    outline-offset:3px;
+    border: solid 3px #1e31ff;
+    outline-radius:15px;
+    border-radius:15px;
+    
 }
 #adults,#childrens,#flightclass{
  margin-top:50px;
  width:25%;
+ height:var(--inputHiegh);
+ outline-style: solid ;
+ outline-offset:3px;
+ border: solid 3px #1e31ff;
+ outline-radius:15px;
+ border-radius:15px;
 }
 #serch{
     margin-top:20px;
