@@ -164,15 +164,15 @@ footer{
    
  
 }
-
-@media (min-width: 768px ) and (max-width: 959px) {
-    body{background:lightblue;}  
+@media (min-width: 1200px ) and (max-width: 1400px) {
+    body{background:#f01b7f;}  
 }
-@media (min-width: 480px ) and (max-width: 767px) {
-    body{background:#00d543}
+@media (min-width: 992px ) and (max-width:1199px ) {
+    body{background:#00c0ff}
 }
-////*mobole*///////
-@media (min-width: 100px ) and (max-width: 480px) {
-    body{background:lightpink}
-  
+@media (min-width: 767px ) and (max-width: 992px) {
+    body{background:#3325ee}
+}
+@media (min-width: 576px ) and (max-width: 766px) {
+    body{background:#ff69b4}
 }
