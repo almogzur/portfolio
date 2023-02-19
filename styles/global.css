@@ -59,15 +59,14 @@ p::first-letter {
 /******* Wrapper Gallery and Dates *****/
 #wrapper{
     display:flex;
-    justify-content:space-around;
-    height:50%;
+    justify-content: center;  
+ 
 }
 /***** Gallery *****/
 .gallerymotion{
     display:flex;
     justify-content:center;
-
-
+    width:50%;
 }
 .btnleft, .btnright {
     position:absolute;
@@ -103,7 +102,7 @@ p::first-letter {
     margin:0px;
 }
 #from,#to{
-    width:100%;
+    width:70%;
     height:30px;
     margin-top:5%;
     height:var(--inputHiegh);
@@ -127,7 +126,7 @@ p::first-letter {
 }
 #depart,#return{
     margin-top:40px;
-    width:100%;
+    width:70%;
     height:var(--inputHiegh);
     outline-style: solid ;
     outline-offset:3px;

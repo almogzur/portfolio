@@ -64,7 +64,6 @@ return (
           <motion.img 
              key={currentPhoto}
              src={photosArry[currentPhoto].src}
-             style={{  borderRadius:"0px" , width:"30vw"}}
              custom={direction}
              variants={variants}
              initial="enter"
