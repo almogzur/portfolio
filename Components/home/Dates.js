@@ -8,9 +8,11 @@ export default function Dates ( ){
 
     const [isFlightBack , setIsFlightBack ] = useState(0)
 
-    handleChange(e) {
+    function  handleChange (e) {
       setIsFlightBack(e.target.value)
+      console.log(e.target.value)
     }
+    
     isFlightBack === 0 ? null : null
       return(
        <div className=" dates ">
