@@ -1,15 +1,17 @@
 :root{
     --blue:#6896c8;
-    --inputHiegh:100px
+    --inputH:50px;
+    --BR:5px;
 }
+
+input{margin:15px;}
+select{margin:15px;}
+
 .text-center{
     text-align:center;
     text-indent: 1%;
 }
-body{
- background:#fff;
- width:100vw;
-}
+
 /**********Nav***** */
 #navbar1{
      font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -35,6 +37,7 @@ body{
     z-index:2;
 }
 .scover{
+     text-align:center;
      width:100%;
      z-index:0;
 }  
@@ -42,7 +45,7 @@ body{
 .welcome{
     display:flex;
     justify-content:center;
-    width:99vw;
+    width:100%;
     align-content:center;
 
 }
@@ -59,110 +62,91 @@ p::first-letter {
 /******* Wrapper Gallery and Dates *****/
 #wrapper{
     display:flex;
-    justify-content: center;  
- 
+    flex-warp:warp;
+    height:30vw;
+    justify-content:space-around;
 }
-/***** Gallery *****/
-.gallerymotion{
-    display:flex;
-    justify-content:center;
+.dates{
     width:50%;
 }
+.gallerymotion{
+    width:25%;
+}
+#gimg{
+    width:100%;
+    z-index:1;
+}
+/***** Buttons *****/
 .btnleft, .btnright {
     position:absolute;
-    
-    display:flex;
     border:none;
-    color:#fff;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
     cursor: pointer;
     z-index:2;
     background:transparent;
   }
-
-.btnleft {
-  left:65%;
-  margin-top:20%;
-  transform: rotate(180deg);
-  
-}
-.btnright { 
-  left:91%;
-  margin-top:20%;
- 
-}
-/********end Gallery *******/
-/****Dates*******/
-.dates{
-    justify-content:center;
-    padding:0px;
-    margin:0px;
-    width:50%;
-}
-#from,#to{
-    width:70%;
-    height:30px;
-    margin-top:5%;
-    height:var(--inputHiegh);
-    outline-style: solid ;
-    outline-offset:3px;
+  .btnright{
+   right:1%;
+  }
+  .btnleft{
+    right:32%;
+    transform: rotate(180deg);
+  }
+  #from,#to{
+    height:var(--inputH);
+    outline:none;
     border: solid 3px #1e31ff;
-    outline-radius:15px;
-    border-radius:15px;
-    
+    border-radius:var(--BR);
 }
-#from:focus{
-   border-color:red;
-}
-#to:focus{
-}
-#from:checked{
-   border-color:#1e31ff;
-}
-#to:checked{
-
+#from.to{
+    height:var(--inputH);
+    width:300px;
 }
 #depart,#return{
-    margin-top:40px;
-    width:70%;
-    height:var(--inputHiegh);
+    height:var(--inputH);
+    width:300px;
+    outline:none;
+    border: solid 3px #1e31ff;
+    border-radius:var(--BR)
+}
+#adults,#childrens,#flightclass{
+    height:var(--inputH);
+    width:100px;
+    margin-left:80px;
     outline-style: solid ;
     outline-offset:3px;
     border: solid 3px #1e31ff;
-    outline-radius:15px;
-    border-radius:15px;
-    
-}
-#adults,#childrens,#flightclass{
- margin-top:50px;
- width:25%;
- height:var(--inputHiegh);
- outline-style: solid ;
- outline-offset:3px;
- border: solid 3px #1e31ff;
- outline-radius:15px;
- border-radius:15px;
+    outline-radius:var(--BR);
+    border-radius:var(--BR);
+    text-align:center;
+
+
 }
 #serch{
+    position:absolute;
+    left:400px;
     margin-top:20px;
     border-radius:10px;
-    width:10%;
-    height:50px;
+    width:100px;
+    height:var(--inputH);
     background:var(--blue);
     border:none;
+
+
 }
+#depart:focus{  border-color:red;}
+#return:focus{  border-color:red;}
+#from:focus{border-color:red;}
+#to:focus{border-color:red;}
+
 /****end dates*******/
+
 footer{
+    margin-top:15px;
    display:flex;
    justify-content:center;
-   width:99vw;
-   height:50px;
-   box-shadow: 1px 0px 5px  var(--blue);
+   height:20px;
    color: white;
    
- 
 }
 @media (min-width: 1200px ) and (max-width: 1400px) {
     body{background:#f01b7f;}  
