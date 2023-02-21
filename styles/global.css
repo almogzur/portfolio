@@ -4,14 +4,13 @@
     --BR:5px;
 }
 
-input{margin:15px;}
-select{margin:15px;}
+input{margin:30px;}
+select{margin:30px;}
 
 .text-center{
     text-align:center;
     text-indent: 1%;
 }
-
 /**********Nav***** */
 #navbar1{
      font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -97,6 +96,12 @@ p::first-letter {
     border: solid 3px #1e31ff;
     border-radius:var(--BR);
 }
+#flightback{
+    height:var(--inputH);
+    outline:none;
+    border: solid 3px #1e31ff;
+    border-radius:var(--BR)
+}
 #from.to{
     height:var(--inputH);
     width:300px;
@@ -123,7 +128,7 @@ p::first-letter {
 }
 #serch{
     position:absolute;
-    left:400px;
+    left:450px;
     margin-top:20px;
     border-radius:10px;
     width:100px;
