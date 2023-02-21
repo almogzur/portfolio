@@ -57,7 +57,7 @@ return (
 <>
    <AnimatePresence initial={"enter"} custom={direction} >
         <div className='gallerymotion'>
-
+      <h1>See Some Of Ower Prestige Locations </h1>
         <button className = "btnleft" onClick = { upClick } ><CircumIcon name="paperplane" size={70} /> </button>
         <button className = "btnright"onClick={downClick} ><CircumIcon name="paperplane" size={70} /> </button>
         
