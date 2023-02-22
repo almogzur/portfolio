@@ -1,7 +1,12 @@
-export default function About (){
+import '../../styles/about.css'
+import '../../styles/global.css'
+import Section from '../../Components/about/section'
 
+export default function About (){
     return(
-     <div>about</div>
+     <>
+      <Section/>
+     </>
     )
 
 }

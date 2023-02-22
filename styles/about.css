@@ -1,0 +1,19 @@
+.abousection{    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    background-image: url('../public/about cover.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.textover{
+    position:absolute;
+    left:10%;
+    top:5%;
+    color:#fff;
+    font-family:Segoe UI;
+    font-size:80px;	
+
+}
